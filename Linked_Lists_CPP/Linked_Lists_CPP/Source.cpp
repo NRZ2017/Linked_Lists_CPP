@@ -1,8 +1,9 @@
-#include "Linked_List.cpp"
+#include "LinkedList.h"
 
 int main()
 { 
 	LinkedList list;
+	Node* node = new Node(77);
 	list.AddFirst(34);
 	list.AddFirst(1);
 	list.AddLast(2);
@@ -10,9 +11,6 @@ int main()
 	list.AddFirst(0);
 	list.AddFirst(555);
 	list.Remove(0);
-	list.RemoveAt(2);
-	list.Contains(34);
-	list.clear();
-
-	//
+	list.AddAfter(node, 77);
+	list.Clear();
 }
